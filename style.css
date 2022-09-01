@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: 20vh 35vh 20vh 20vh;
+  gap: 1rem 1rem;
+  padding: 1rem;
+}
+.content {
+  color: white;
+  background-color: blue;
+}
+header {
+  grid-area: 1 / 1 / span 1 / span 4;
+}
+.SB {
+  grid-area: 2 / 4 / span 2 / span 1;
+}
+.MC {
+  grid-area: 3 / 1 / span 1 / span 3;
+}
+footer {
+  grid-area: 4 / 1 / span 1 / span 4;
+}
